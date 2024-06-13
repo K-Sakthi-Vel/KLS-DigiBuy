@@ -26,7 +26,7 @@ const SignUp = () => {
     
     if(e.target.password.value === e.target.confirm_password.value){
 
-      axios.post("http://localhost:4004/user/register",{data:{
+      axios.post("https://kls-digibuy-i4jn.onrender.com/user/register",{data:{
 
         username:e.target.username.value,
         email:e.target.user_email.value,
