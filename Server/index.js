@@ -10,7 +10,19 @@ const cors = require("cors");
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1/KLS_DigiBuy");
+mongoose.connect(
+  'mongodb+srv://mechonsakthi44:%40Sakthi333@klsdigibuy.aeinmxl.mongodb.net/',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+const db = mongoose.connection;
+
+db.once('open',()=>{
+    console.log("Connected to database :: MongoDB")
+});
 
 const passportJWT = require("./config/jwt_strategy");   
 
@@ -30,13 +42,6 @@ else{
         res.send("App running Successfully")
     })
 }
-
-
-const db = mongoose.connection;
-
-db.once('open',()=>{
-    console.log("Connected to database :: MongoDB")
-});
 
 app.use(cors());
 
