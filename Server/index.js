@@ -11,7 +11,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  'mongodb+srv://mechonsakthi44:%40Sakthi333@klsdigibuy.aeinmxl.mongodb.net/',
+  
+  'mongodb+srv://mechonsakthi44:%40Sakthi333@klsdigibuy.aeinmxl.mongodb.net/?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
