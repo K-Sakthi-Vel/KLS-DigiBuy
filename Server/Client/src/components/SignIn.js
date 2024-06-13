@@ -25,7 +25,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:4004/user/signin",{data:{
+    axios.post("https://kls-digibuy-i4jn.onrender.com/user/signin",{data:{
       email:e.target.user_email.value,
       password:e.target.password.value,
       usertype:e.target.usertype.value
