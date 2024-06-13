@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
 
 mongoose.connect(
   
-  'mongodb+srv://mechonsakthi44:%40Sakthi333@klsdigibuy.aeinmxl.mongodb.net/?retryWrites=true&w=majority',
+  'mongodb+srv://mechonsakthi44:x13mjgKfICMDfgUS@kls.vz3s7ba.mongodb.net/?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
