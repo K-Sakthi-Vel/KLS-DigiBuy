@@ -47,7 +47,7 @@ const SellerMain = () => {
 
     e.preventDefault();
     // axios post request to server side to add product
-    axios.post("http://localhost:4004/seller/add_product",{data:{
+    axios.post("https://kls-digibuy.onrender.com/seller/add_product",{data:{
         sellername:e.target.sellername.value,
         name:e.target.product_name.value,
         price:e.target.price.value,
@@ -62,7 +62,7 @@ const SellerMain = () => {
         e.target.filename.value="",
     )
     .then(()=>
-        axios.post("http://localhost:4004/seller/get_products",{seller:sellername})
+        axios.post("https://kls-digibuy.onrender.com/seller/get_products",{seller:sellername})
         .then(result => dispatch(setSellerProducts(result.data)))
         .catch(err => console.log(err))
     )
@@ -84,9 +84,9 @@ const SellerMain = () => {
 
   const deleteProduct = async(product) =>{
 
-    await axios.post("http://localhost:4004/seller/delete_product",{id:product._id})
+    await axios.post("https://kls-digibuy.onrender.com/seller/delete_product",{id:product._id})
     .then(result => 
-        axios.post("http://localhost:4004/seller/get_products",{seller:sellername})
+        axios.post("https://kls-digibuy.onrender.com/seller/get_products",{seller:sellername})
         .then(result => dispatch(setSellerProducts(result.data)))
         .catch(err => console.log(err))
     )
@@ -98,7 +98,7 @@ const SellerMain = () => {
 
   const hadnleEdit = (e)=>{
 
-    axios.post("http://localhost:4004/seller/edit_product",{data:{
+    axios.post("https://kls-digibuy.onrender.com/seller/edit_product",{data:{
         id:currentEdit,
         product_name:e.target.product_name.value,
         product_price:e.target.price.value,
@@ -111,7 +111,7 @@ const SellerMain = () => {
 
   useEffect(()=>{
 
-    axios.post("http://localhost:4004/seller/get_products",{seller:sellername})
+    axios.post("https://kls-digibuy.onrender.com/seller/get_products",{seller:sellername})
 
     .then(result => dispatch(setSellerProducts(result.data)))
 
