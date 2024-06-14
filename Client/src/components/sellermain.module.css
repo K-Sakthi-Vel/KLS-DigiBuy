@@ -189,7 +189,7 @@
     font-weight: 600;
     color: darkorange;
 }
-.a_product img{
+.a_product+img{
     background-color: inherit;
     height: 150px;
     min-height: 150px;
