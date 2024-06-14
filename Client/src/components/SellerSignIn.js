@@ -30,7 +30,7 @@ const SellerSignIn = () => {
 
     e.preventDefault();
 
-    axios.post("http://localhost:4004/seller/signin",{data:{
+    axios.post("https://kls-digibuy.onrender.com/seller/signin",{data:{
       email:e.target.seller_email.value,
       password:e.target.password.value,
       usertype:e.target.usertype.value
