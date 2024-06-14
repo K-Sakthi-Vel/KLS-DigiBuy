@@ -64,7 +64,7 @@ const Navbar = () => {
 
     e.preventDefault();
 
-    axios.post("http://localhost:4004/user/search_products",{content:e.target.search_content.value})
+    axios.post("https://kls-digibuy.onrender.com/user/search_products",{content:e.target.search_content.value})
         .then(result => {
           dispatch(setSearchResults(result.data.result))
           dispatch(setSearchContent(result.data.content))
@@ -73,7 +73,7 @@ const Navbar = () => {
   }
   
   function fetchProducts(){
-    axios.post("http://localhost:4004/user/get_products")
+    axios.post("https://kls-digibuy.onrender.com/user/get_products")
     .then(result => dispatch(setProducts(result.data)))
     .catch(err => console.log(err))
   }
