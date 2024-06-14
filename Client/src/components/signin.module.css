@@ -1,0 +1,55 @@
+.outer_div{
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app_name{
+    height: 200px;
+    width: 400px;
+}
+.outer_div form{
+    position: relative;
+    top: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.outer_div input{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    border: 1px solid green;
+
+}
+.outer_div button{
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    background-color: orangered;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.05;
+    color: aliceblue;
+}
+.goback_image{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+}
+.goback_image:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}

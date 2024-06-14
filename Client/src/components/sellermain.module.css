@@ -1,0 +1,326 @@
+.sellermain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.seller_details{
+    width: 35%;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: lightcyan;
+    border-right: 1px solid gray;
+}
+.seller_pic{
+    position: relative;
+    background-color: inherit;
+    height: 150px;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.seller_name{
+    position: relative;
+    font-size: 1.2rem;
+    color: grey;
+    background-color: inherit;
+    text-align: center;
+}
+.address{
+    position: relative;
+    background-color: inherit;
+    margin-left: 20px;
+    color: #464748;
+    line-height: 30px;
+}
+.location_and_contact{
+    position: relative;
+    left: 20px;
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+}
+.location_and_contact img{
+    height: 30px;
+    width: 30px;
+    display: block;
+    background-color: inherit;
+}
+.location_and_contact p{
+    margin-left: 10px;
+    background-color: inherit;
+}
+.seller_details button{
+    position: relative;
+    top: 50px;
+    width: 90%;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+.seller_products{
+    width: 65%;
+    height: 100vh;
+    background-color: white;
+
+}
+.nav{
+    position: relative;
+    top: 5px;
+    height: 50px;
+    width: 99%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.nav p{
+    background-color: inherit;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.add_product{
+    height: 40px;
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 10px;
+    background-color: lightgreen;
+    border: none;
+}
+.add_product_div{
+    position: relative;
+    width: 65%;
+    height: 500px;
+    background-color: white;
+    padding-top: 20px;
+}
+.heading{
+    text-align: center;
+    background-color: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.add_product_div form{
+    width: 70%;
+    height: fit-content;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: inherit;
+}
+.add_product_div input{
+    height: 40px;
+    width: 90%;
+    background-color: aliceblue;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+.add_product_div button{
+    position: relative;
+    top: 20px;
+    height: 40px;
+    width: 90%;
+    border: none;
+    background-color: orchid;
+}
+.close_button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 7px;
+}
+.close_button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.products_list{
+    position: relative;
+    top: 5px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: inherit;
+    padding-top: 20px;
+    overflow-y: scroll;
+    gap: 40px;
+}
+.a_product{
+    position: relative;
+    height: 250px;
+    width: 200px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.name_of_product{
+    background-color: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: darkorange;
+}
+.a_product img{
+    background-color: inherit;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details,.price,.rating{
+    background-color: inherit;
+}
+.price{
+    width: 50%;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: gray;
+    
+}
+.price::before{
+    background-image: url('../images/rupees.png');
+    background-repeat: no-repeat;
+    background-size: 15px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+.rating{
+    background-color: darkorchid;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rating::before{
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+.edit_delete{
+    position: absolute;
+    right: -10px;
+    top:5px;
+    height: 50px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+.edit_delete img{
+    height: 20px;
+    width: 20px;
+}
+.edit_delete img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.edit_product{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid green;
+}
+.edit_product form{
+    height: 300px;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.edit_product input{
+    border: 1px solid gray;
+    height: 30px;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+.edit_product p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: inherit;
+}
+.edit_product button{
+    height: 30px;
+    width: 50%;
+    border: none;
+    background-color: aquamarine;
+}
+.close_button_edit{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+.close_button_edit:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
